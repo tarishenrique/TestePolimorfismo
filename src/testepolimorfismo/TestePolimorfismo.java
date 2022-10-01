@@ -1,20 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package testepolimorfismo;
 
 /**
- *
- * @author taris
+ * @author taris / Created 30-09-2022
  */
-public class TestePolimorfismo {
 
-    /**
-     * @param args the command line arguments
-     */
+public class TestePolimorfismo {
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        // OperacaoMatematica om = new OperacaoMatematica();
+        Soma soma = new Soma();
+        Subtracao sub = new Subtracao();
+
+        // System.out.println("Operação Matemática: " + om.calcular(10, 2));
+
+        System.out.println("Soma: " + soma.calcular(10, 2));
+
+        System.out.println("Subtração: " + sub.calcular(10, 2));
+
     }
-    
+
 }
