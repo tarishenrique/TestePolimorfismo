@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package testepolimorfismo;
 
-/**
- *
- * @author taris
- */
-public class OperacaoMatematica {
-    
+public abstract class OperacaoMatematica {
+
+    protected double valor;
+
+    public abstract double calcular(double n1, double n2);
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
 }
